@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /soumission-toiture-plate/
+
+Sitemap: https://experts-toiture-plate.ca/sitemap-index.xml
