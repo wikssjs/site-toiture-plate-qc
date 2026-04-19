@@ -39,7 +39,7 @@
         "name": "Saint-Sébastien",
         "containedInPlace": {
           "@type": "AdministrativeArea",
-          "name": "Montérégie (16)"
+          "name": "Estrie (05)"
         }
       },
       "priceRange": "$$",
@@ -61,8 +61,8 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Montérégie (16)",
-          "item": "https://experts-toiture-plate.ca/region/monteregie-16"
+          "name": "Estrie (05)",
+          "item": "https://experts-toiture-plate.ca/region/estrie-05"
         },
         {
           "@type": "ListItem",
@@ -85,7 +85,7 @@
   <div class="dk-nav__inner">
     <a href="/" class="dk-nav__logo">Experts Toiture Plate</a>
     <div class="dk-nav__right">
-      <a href="#formulaire" class="dk-nav__cta">Obtenir un prix</a>
+      <a href="/soumission-toiture-plate/" target="_blank" rel="noopener sponsored" class="dk-nav__cta">Obtenir un prix</a>
     </div>
   </div>
 </nav>
@@ -94,7 +94,7 @@
     <nav class="dk-breadcrumb__inner">
       <a href="/">Accueil</a>
       <span class="dk-breadcrumb__sep">›</span>
-      <a href="/region/monteregie-16">Montérégie (16)</a>
+      <a href="/region/estrie-05">Estrie (05)</a>
       <span class="dk-breadcrumb__sep">›</span>
       <span class="dk-breadcrumb__current">Toiture Plate Saint-Sébastien</span>
     </nav>
@@ -110,7 +110,7 @@
       <div class="dk-hero__kicker">
         <span class="dk-badge-brand">
           <span class="tp-pulse" style="width:.4rem;height:.4rem;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0"></span>
-          15 projets de toiture plate soumis cette semaine
+          14 projets de toiture plate soumis cette semaine
         </span>
       </div>
 
@@ -463,28 +463,28 @@
         </p>
         <div class="dk-footer__pulse-row">
           <span class="tp-pulse" style="width:.4375rem;height:.4375rem;border-radius:9999px;background:var(--p500);display:inline-block"></span>
-          15 projets de toiture plate soumis cette semaine
+          14 projets de toiture plate soumis cette semaine
         </div>
       </div>
 
       <div>
-        <h4 class="dk-footer__col-label">Toiture plate en Montérégie (16)</h4>
+        <h4 class="dk-footer__col-label">Toiture plate en Estrie (05)</h4>
         <div class="dk-footer__links">
-          <a href="/sainte-martine">Sainte-Martine</a>
-          <a href="/beauharnois">Beauharnois</a>
-          <a href="/saint-antoine-sur-richelieu">Saint-Antoine-sur-Richelieu</a>
-          <a href="/saint-joseph-de-sorel">Saint-Joseph-de-Sorel</a>
-          <a href="/sainte-catherine">Sainte-Catherine</a>
-          <a href="/saint-jacques-le-mineur">Saint-Jacques-le-Mineur</a>
-          <a href="/otterburn-park">Otterburn Park</a>
-          <a href="/l-ile-cadieux">L'Île-Cadieux</a>
-          <a href="/notre-dame-de-l-ile-perrot">Notre-Dame-de-l'Île-Perrot</a>
-          <a href="/saint-blaise-sur-richelieu">Saint-Blaise-sur-Richelieu</a>
-          <a href="/saint-charles-sur-richelieu">Saint-Charles-sur-Richelieu</a>
-          <a href="/venise-en-quebec">Venise-en-Québec</a>
-          <a href="/saint-bruno-de-montarville">Saint-Bruno-de-Montarville</a>
-          <a href="/terrasse-vaudreuil">Terrasse-Vaudreuil</a>
-          <a href="/saint-bernard-de-lacolle">Saint-Bernard-de-Lacolle</a>
+          <a href="/saint-malo">Saint-Malo</a>
+          <a href="/marston">Marston</a>
+          <a href="/ascot-corner">Ascot Corner</a>
+          <a href="/stornoway">Stornoway</a>
+          <a href="/frontenac">Frontenac</a>
+          <a href="/scotstown">Scotstown</a>
+          <a href="/saint-venant-de-paquette">Saint-Venant-de-Paquette</a>
+          <a href="/ulverton">Ulverton</a>
+          <a href="/wotton">Wotton</a>
+          <a href="/valcourt">Valcourt</a>
+          <a href="/newport">Newport</a>
+          <a href="/saint-robert-bellarmin">Saint-Robert-Bellarmin</a>
+          <a href="/lambton">Lambton</a>
+          <a href="/sainte-cecile-de-whitton">Sainte-Cécile-de-Whitton</a>
+          <a href="/nantes">Nantes</a>
         </div>
       </div>
 
@@ -492,7 +492,7 @@
         <h4 class="dk-footer__col-label">Navigation</h4>
         <nav class="dk-footer__nav">
           <a href="/">Accueil</a>
-          <a href="/region/monteregie-16">Montérégie (16)</a>
+          <a href="/region/estrie-05">Estrie (05)</a>
           <a href="/sitemap-index.xml">Plan du site XML</a>
         </nav>
       </div>
@@ -501,7 +501,7 @@
 
     <div class="dk-footer__bottom">
       <p>© 2026 Experts Toiture Plate · Tous droits réservés</p>
-      <p>Toiture Plate · Saint-Sébastien · Montérégie (16)</p>
+      <p>Toiture Plate · Saint-Sébastien · Estrie (05)</p>
     </div>
   </div>
 </footer>
@@ -599,6 +599,15 @@ if (_form) {
 var _stickyBar = document.getElementById('sticky-bar');
 if (_stickyBar) {
   var _formEl = document.getElementById('formulaire');
+  window.addEventListener('scroll', function() {
+    if (_formEl) {
+      var rect = _formEl.getBoundingClientRect();
+      _stickyBar.style.display = (rect.top < window.innerHeight && rect.bottom > 0) ? 'none' : '';
+    }
+  }, {passive: true});
+}
+</script></body>
+</html>cument.getElementById('formulaire');
   window.addEventListener('scroll', function() {
     if (_formEl) {
       var rect = _formEl.getBoundingClientRect();
