@@ -39,7 +39,7 @@
         "name": "Sainte-Sabine",
         "containedInPlace": {
           "@type": "AdministrativeArea",
-          "name": "Chaudière-Appalaches (12)"
+          "name": "Estrie (05)"
         }
       },
       "priceRange": "$$",
@@ -61,8 +61,8 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Chaudière-Appalaches (12)",
-          "item": "https://experts-toiture-plate.ca/region/chaudiere-appalaches-12"
+          "name": "Estrie (05)",
+          "item": "https://experts-toiture-plate.ca/region/estrie-05"
         },
         {
           "@type": "ListItem",
@@ -94,7 +94,7 @@
     <nav class="tp-breadcrumb__inner">
       <a href="/">Accueil</a>
       <span class="tp-breadcrumb__sep">›</span>
-      <a href="/region/chaudiere-appalaches-12">Chaudière-Appalaches (12)</a>
+      <a href="/region/estrie-05">Estrie (05)</a>
       <span class="tp-breadcrumb__sep">›</span>
       <span class="tp-breadcrumb__current">Toiture Plate Sainte-Sabine</span>
     </nav>
@@ -110,7 +110,7 @@
       <div class="tp-hero__kicker">
         <span class="tp-badge-brand">
           <span class="tp-pulse" style="width:.4rem;height:.4rem;border-radius:50%;background:var(--accent);display:inline-block;flex-shrink:0"></span>
-          9 projets de toiture plate soumis cette semaine
+          15 projets de toiture plate soumis cette semaine
         </span>
       </div>
 
@@ -473,28 +473,28 @@
         </p>
         <div class="tp-footer__pulse-row">
           <span class="tp-pulse" style="width:.4375rem;height:.4375rem;border-radius:9999px;background:var(--p500);display:inline-block"></span>
-          9 projets de toiture plate soumis cette semaine
+          15 projets de toiture plate soumis cette semaine
         </div>
       </div>
 
       <div>
-        <h4 class="tp-footer__col-label">Toiture plate en Chaudière-Appalaches (12)</h4>
+        <h4 class="tp-footer__col-label">Toiture plate en Estrie (05)</h4>
         <div class="tp-footer__links">
-          <a href="/saint-adalbert">Saint-Adalbert</a>
-          <a href="/saint-jean-de-brebeuf">Saint-Jean-de-Brébeuf</a>
-          <a href="/saint-vallier">Saint-Vallier</a>
-          <a href="/saint-damien-de-buckland">Saint-Damien-de-Buckland</a>
-          <a href="/saint-antoine-de-l-isle-aux-grues">Saint-Antoine-de-l'Isle-aux-Grues</a>
-          <a href="/adstock">Adstock</a>
-          <a href="/notre-dame-du-sacre-coeur-d-issoudun">Notre-Dame-du-Sacré-Coeur-d'Issoudun</a>
-          <a href="/saint-patrice-de-beaurivage">Saint-Patrice-de-Beaurivage</a>
-          <a href="/saint-michel-de-bellechasse">Saint-Michel-de-Bellechasse</a>
-          <a href="/saint-jacques-de-leeds">Saint-Jacques-de-Leeds</a>
-          <a href="/sainte-felicite">Sainte-Félicité</a>
-          <a href="/saint-roch-des-aulnaies">Saint-Roch-des-Aulnaies</a>
-          <a href="/saint-sylvestre">Saint-Sylvestre</a>
-          <a href="/beaulac-garthby">Beaulac-Garthby</a>
-          <a href="/saint-joseph-de-beauce">Saint-Joseph-de-Beauce</a>
+          <a href="/cleveland">Cleveland</a>
+          <a href="/lawrenceville">Lawrenceville</a>
+          <a href="/roxton-pond">Roxton Pond</a>
+          <a href="/saint-benoit-du-lac">Saint-Benoît-du-Lac</a>
+          <a href="/saint-denis-de-brompton">Saint-Denis-de-Brompton</a>
+          <a href="/east-angus">East Angus</a>
+          <a href="/cookshire-eaton">Cookshire-Eaton</a>
+          <a href="/abercorn">Abercorn</a>
+          <a href="/bury">Bury</a>
+          <a href="/notre-dame-de-stanbridge">Notre-Dame-de-Stanbridge</a>
+          <a href="/newport">Newport</a>
+          <a href="/lambton">Lambton</a>
+          <a href="/farnham">Farnham</a>
+          <a href="/potton">Potton</a>
+          <a href="/richmond">Richmond</a>
         </div>
       </div>
 
@@ -502,7 +502,7 @@
         <h4 class="tp-footer__col-label">Navigation</h4>
         <nav class="tp-footer__nav">
           <a href="/">Accueil</a>
-          <a href="/region/chaudiere-appalaches-12">Chaudière-Appalaches (12)</a>
+          <a href="/region/estrie-05">Estrie (05)</a>
           <a href="/sitemap-index.xml">Plan du site XML</a>
         </nav>
       </div>
@@ -511,7 +511,7 @@
 
     <div class="tp-footer__bottom">
       <p>© 2026 Experts Toiture Plate · Tous droits réservés</p>
-      <p>Toiture Plate · Sainte-Sabine · Chaudière-Appalaches (12)</p>
+      <p>Toiture Plate · Sainte-Sabine · Estrie (05)</p>
     </div>
   </div>
 </footer>
@@ -604,6 +604,20 @@ if (_form) {
       }
     }).catch(function() { _form.submit(); });
   });
+}
+
+var _stickyBar = document.getElementById('sticky-bar');
+if (_stickyBar) {
+  var _formEl = document.getElementById('formulaire');
+  window.addEventListener('scroll', function() {
+    if (_formEl) {
+      var rect = _formEl.getBoundingClientRect();
+      _stickyBar.style.display = (rect.top < window.innerHeight && rect.bottom > 0) ? 'none' : '';
+    }
+  }, {passive: true});
+}
+</script></body>
+</html>
 }
 
 var _stickyBar = document.getElementById('sticky-bar');
