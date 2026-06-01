@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 40" width="230" height="40" role="img" aria-label="Experts Toiture Plate">
+  <!-- Flat roof icon — monochrome for clean inversion -->
+  <!-- Roof slab (the wide flat top) -->
+  <rect x="0" y="9" width="40" height="5.5" rx="2.5" fill="#0284c7"/>
+  <!-- Left wall -->
+  <rect x="3" y="14" width="5" height="22" rx="1" fill="#0284c7"/>
+  <!-- Right wall -->
+  <rect x="32" y="14" width="5" height="22" rx="1" fill="#0284c7"/>
+  <!-- Bottom floor -->
+  <rect x="3" y="33" width="34" height="3" rx="1" fill="#0284c7"/>
+  <!-- Central door arch -->
+  <rect x="15" y="22" width="10" height="14" rx="2" fill="#0284c7"/>
+  <!-- Vent/pipe on roof (flat roof detail) -->
+  <rect x="28" y="5" width="5" height="5" rx="1" fill="#0284c7"/>
+  <!-- Text: EXPERTS -->
+  <text x="50" y="16" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="10" font-weight="700" fill="#0369a1" letter-spacing="2.5">EXPERTS</text>
+  <!-- Text: Toiture Plate -->
+  <text x="49" y="34" font-family="'Segoe UI',system-ui,Arial,sans-serif" font-size="18" font-weight="800" fill="#0284c7" letter-spacing="-0.3">Toiture Plate</text>
+</svg>
